@@ -1,0 +1,1 @@
+<view class="head"><view class="title">AI-Fit<view></view>居家锻炼智能助手</view></view><button bindtap="{{a}}" id="back">主页</button><video src="/static/duck.mp4"></video>

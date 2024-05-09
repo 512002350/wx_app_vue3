@@ -1,0 +1,110 @@
+<template>
+	<view class="content">
+		<view class="head">
+			<div class="title">AI-Fit<br>居家锻炼智能助手</div>
+		</view>
+		<view class="body">
+			<camera device-position="front" flash="off" @error="error" id="people_body"></camera>
+			<img src="../static/人体框.png" alt="" id="people_kuang" />
+			<img src="../static/摄像头提示框1.png" alt="" id="tsk" />
+			<button type="primary" @click="btn" id="btn">开始锻炼</button>
+		</view>
+	</view>
+</template>
+<script setup>
+	// import { switchTab } from '@dcloudio/uni-app';
+	const btn = () => {
+	  console.log(1);
+	  uni.switchTab({
+	  	url:"/pages/exercise/details"
+	  })
+	};
+
+
+	
+</script>
+
+<style>
+	/* 在页面的样式文件中添加以下样式 */
+	html {
+		overflow: -moz-scrollbars-none;
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		color: transparent;
+	}
+
+	.content {
+		overflow: hidden;
+		-ms-overflow-style: none;
+	}
+
+	.head {
+		/* 背景颜色 */
+		position: absolute;
+		width: 430px;
+		height: 15vh;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: -29.91%;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+		background: rgb(255, 209, 65);
+	}
+
+	.title {
+		position: relative;
+		top: 13vw;
+		left: 20px;
+		font-size: 20px;
+
+		font-weight: 900;
+		letter-spacing: 2px;
+	}
+
+	.body {
+		position: absolute;
+		top: 30vw;
+		width: 100%;
+		/* height: 84vh; */
+		display: flex;
+		justify-content: center;
+	}
+
+	#people_body {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+	}
+
+	#people_kuang {
+		width: 100vw;
+		height: 85vh;
+		z-index: 2;
+	}
+
+	#btn {
+		position: absolute;
+		top: 70vh;
+		width: 60vw;
+		border-radius: 10px;
+
+		background: rgb(255, 209, 65);
+		color: rgb(0, 0, 0);
+		font-weight: bolder;
+		z-index: 999;
+	}
+
+	#tsk {
+		position: absolute;
+		top: 5vh;
+		width: 65vw;
+		height: 9vh;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0);
+		opacity: 0.5;
+
+	}
+</style>

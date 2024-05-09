@@ -1,0 +1,137 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+html {
+  overflow: -moz-scrollbars-none;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.content {
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+.head {
+  /* 背景颜色 */
+  position: absolute;
+  width: 430px;
+  height: 15vh;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -29.91%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  background: #ffd141;
+}
+.title {
+  position: relative;
+  top: 13vw;
+  left: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.video_link {
+  position: absolute;
+  top: 17vh;
+}
+.lj_img {
+  /* 链接 */
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 18px;
+  right: 335px;
+}
+.lj_div {
+  position: relative;
+  left: 50px;
+  font-weight: bold;
+}
+.link_input {
+  position: absolute;
+  top: 21vh;
+  left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link_input > input {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  width: 285px;
+  height: 49.66px;
+  text-indent: 1rem;
+  margin-right: 10px;
+}
+.open_video {
+  width: 71px;
+  height: 57px;
+  position: relative;
+  left: 20px;
+}
+.video_show {
+  /* 链接视频 */
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.video_show_img {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.start_btn {
+  position: absolute;
+  top: 60vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.start_btn_img {
+  width: 251px;
+  height: 57px;
+}
+.suggest {
+  position: absolute;
+  top: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.suggest_img {
+  width: 85%;
+}

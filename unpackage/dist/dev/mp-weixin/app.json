@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/exercise/index",
+    "pages/exercise/details",
+    "pages/mine/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFD141",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/主页.png",
+        "selectedIconPath": "static/主页.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/exercise/details",
+        "iconPath": "static/运动页.png",
+        "selectedIconPath": "static/运动页.png",
+        "text": "运动"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/我的.png",
+        "selectedIconPath": "static/我的.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
